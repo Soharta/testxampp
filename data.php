@@ -1,6 +1,9 @@
 <?
-if( empty($_POST['data']) ) echo 'Все плохо';
-	echo 'Все хорошо!!!!!';
-	// $data = json_encode($_POST['data']);
-	print ($_POST['data']);
+if( empty($_POST['data']) ) 
+	exit('Все плохо');
+$data = json_decode($_POST['data'], true);
+if(empty($data['firstname']) || empty($data['email']))
+	exit('Нет необходимых данных!!!');
+print_r ($data);
+exit('Хорошо!!!');
 ?>
