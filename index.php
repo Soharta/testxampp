@@ -30,7 +30,7 @@
 				data: data
 			},
 			success: function(data) {
-				$('.result').html('data');
+				$('.result').html('<div>'+data+'</div>');
 			}
 		});
 		return false
