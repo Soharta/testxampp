@@ -10,7 +10,7 @@ foreach( $data as $key => $value ) {
 }
 
 
-require_once 'php/PHPMailer/PHPMailerAutoload.php';
+require_once 'PHPMailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
